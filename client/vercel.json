@@ -1,11 +1,7 @@
 {
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "server.js",
+      "src": "src/index.js",
       "use": "@vercel/node"
     }
   ],
