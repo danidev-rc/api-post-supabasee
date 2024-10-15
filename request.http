@@ -1,0 +1,65 @@
+POST http://localhost:4000/api/login
+Content-Type: application/json
+
+{
+  "email" : "user1@gmail.com",
+  "password" : "user123"
+}
+###
+GET http://localhost:4000/api/profile/
+###
+POST http://localhost:4000/api/register
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "email": "user2@gmail.com",
+  "password": "user123"
+}
+###
+POST http://localhost:4000/api/logout
+
+###
+GET http://localhost:4000/api/posts/
+###
+PUT http://localhost:4000/api/posts/4
+Content-Type: application/json
+
+{
+  "title": "Post Actualizado",
+  "description": "Descripción del post actualizado",
+  "date": "2023-10-10T00:00:00.000Z"
+}
+###
+DELETE http://localhost:4000/api/posts/6
+###
+POST http://localhost:4000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Nuevo Post 2",
+  "description": "Descripción del nuevo post 2",
+  "date": "2023-10-10T00:00:00.000Z"
+}
+###
+
+POST https://api-post-supabase.onrender.com/login
+Content-Type: application/json
+
+{
+  "email" : "user1@gmail.com",
+  "password" : "user123"
+}
+###
+POST https://api-post-supabase.onrender.com/api/register
+Content-Type: application/json
+
+{
+  "username": "user3",
+  "email": "user3@gmail.com",
+  "password": "user123"
+}
+###
+POST https://api-post-supabase.onrender.com/api/logout
+###
+GET https://api-post-supabase.onrender.com/api/posts
